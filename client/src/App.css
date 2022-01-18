@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+.my-container{
+  max-width: 400px !important;
+}
+body{
+  overflow-x: hidden;
+  font-family: 'Poppins';
+}
+.btn_grup{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  column-gap: 0.3rem;
+}
+
+@media only screen and (max-width: 992px){
+  .hide-on-med-and-down{
+    display: block !important;
+  }
+  .brand-logo{
+    font-size: 1.2rem !important;
+  }
+}
