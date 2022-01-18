@@ -15,7 +15,10 @@ const Profile = () => {
   const [UpadtedQuote,SetUpadtedQuote]=useState();
   const navigate = useNavigate();
 // --------------------------GET OWN PROFILE INFO----------------------------------
-const { loading, error, data } = useQuery(GET_MY_PROFILE);
+const {loading,error,data} = useQuery(GET_MY_PROFILE,{
+  fetchPolicy:"cache-and-network"
+})
+
 
 // ----------------------- DELETE OWN QUOTE------------------------------------
 const [deleteQuote, { DeletedQoteData, DeleteQuoteloading, Deleteerror }] =
